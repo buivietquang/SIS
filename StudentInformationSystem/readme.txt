@@ -30,5 +30,5 @@ CÁC GÓI CÓ VÀ CHỨC NĂNG( Mô hình MVC )
 	-	Properties: chứa class đọc file .properties, thường lưu message, các cấu hình config, thông tin về DB…
 	
 	
-Ngày 14 -04 -2023: *Thiết kế gói properties; Thiết kế gói util
+Ngày 14 -04 -2023: Commit thêm gói properties, gói util, gói controller , sửa lỗi controller
 
