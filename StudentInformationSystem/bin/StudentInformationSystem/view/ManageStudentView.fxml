@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="updateStudentPane" prefHeight="544.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentInformationSystem.controller.ManageStudentController">
+	<children>
+		<Label layoutX="35.0" layoutY="22.0" prefHeight="47.0" prefWidth="269.0" text="Quản lý sinh viên" textFill="#c54e2c">
+			<font>
+				<Font size="32.0" />
+			</font>
+		</Label>
+		<TextField fx:id="linkFileExcel" editable="false" layoutX="35.0" layoutY="73.0" prefHeight="35.0" prefWidth="435.0" promptText="Links to excel file" />
+		<Button layoutX="629.0" layoutY="69.0" mnemonicParsing="false" onAction="#addUser" prefHeight="39.0" prefWidth="151.0" text="Thêm sinh viên" textFill="#fffafa">
+			<font>
+				<Font name="System Bold" size="16.0" />
+			</font>
+		</Button>
+		<Button layoutX="498.0" layoutY="72.0" mnemonicParsing="false" onAction="#openExcelFile" prefHeight="37.0" prefWidth="110.0" style="-fx-alignment: ; -: ;" text="Chọn file" textFill="#fffafa">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Button>
+		<TableView fx:id="tableUser" layoutX="15.0" layoutY="193.0" onMouseClicked="#handleRowSelect" prefHeight="336.0" prefWidth="928.0">
+			<columns>
+				<TableColumn fx:id="columnID" minWidth="0.0" prefWidth="64.33333587646484" text="User_ID" />
+				<TableColumn fx:id="columnUserName" prefWidth="113.33334350585938" text="MSSV" />
+				<TableColumn fx:id="columnFullname" minWidth="0.0" prefWidth="151.0" text="Họ tên" />
+				<TableColumn fx:id="columnBirthday" minWidth="0.0" prefWidth="91.0" text="Ngày sinh" />
+				<TableColumn fx:id="columnGender" minWidth="0.0" prefWidth="89.0" text="Giới tính" />
+				<TableColumn fx:id="columnEmail" minWidth="0.0" prefWidth="157.0" text="Email" />
+				<TableColumn fx:id="columnPhone" minWidth="0.0" prefWidth="123.0" text="Số điện thoại" />
+				<TableColumn fx:id="columnAddress" minWidth="0.0" prefWidth="137.0" text="Địa chỉ" />
+			</columns>
+		</TableView>
+      <TextField fx:id="keyword" layoutX="105.0" layoutY="134.0" prefHeight="35.0" prefWidth="192.0" promptText="Nhập MSSV để tìm kiếm" />
+      <Button layoutX="327.0" layoutY="135.0" mnemonicParsing="false" onAction="#searchUser" prefHeight="37.0" prefWidth="110.0" style="-: #00b6ff; : 28;" text="Tìm kiếm" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="35.0" layoutY="141.0" prefHeight="25.0" prefWidth="46.0" text="MSSV">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="addUserNotification" fill="RED" layoutX="35.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="435.0" />
+	</children>
+</AnchorPane>

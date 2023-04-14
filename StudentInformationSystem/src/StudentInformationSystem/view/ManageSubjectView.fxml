@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="updateSubjectPane" prefHeight="560.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentInformationSystem.controller.ManageSubjectController">
+   <children>
+      <Label layoutX="52.0" layoutY="24.0" prefHeight="47.0" prefWidth="269.0" text="Cập nhật học phần" textFill="#c54e2c">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="98.0" text="Tìm kiếm" />
+      <TextField fx:id="tfsearchSubject" layoutX="366.0" layoutY="92.0" onKeyReleased="#searchByKeyPressed" prefHeight="35.0" prefWidth="224.0" />
+      <TableView fx:id="tbUpdateSubject" layoutX="274.0" layoutY="155.0" onMouseClicked="#tbSelectSubject" prefHeight="393.0" prefWidth="654.0">
+         <columns>
+            <TableColumn fx:id="subjectCodeUS" prefWidth="75.0" text="Mã HP" />
+            <TableColumn fx:id="subjectNameUS" prefWidth="170.0" text="Tên HP" />
+            <TableColumn fx:id="creditSubjectUS" prefWidth="55.0" text="Số TC" />
+            <TableColumn fx:id="creditTuitionUS" prefWidth="60.0" text="TC HP" />
+            <TableColumn fx:id="instituteUS" prefWidth="237.0" text="Khoa" />
+            <TableColumn fx:id="weightUS" prefWidth="56.0" text="Hệ số" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="cbInstitute" layoutX="609.0" layoutY="92.0" onAction="#searchByInstitute" prefHeight="39.0" prefWidth="316.0" />
+      <Label layoutX="18.0" layoutY="431.0" text="Hệ số" />
+      <Label layoutX="18.0" layoutY="365.0" text="Khoa" />
+      <Label layoutX="15.0" layoutY="300.0" text="Tín chỉ học phí" />
+      <Label layoutX="16.0" layoutY="230.0" text="Tín chỉ học phần" />
+      <Label layoutX="18.0" layoutY="164.0" text="Tên học phần" />
+      <Label layoutX="20.0" layoutY="98.0" text="Mã học phần" />
+      <Button fx:id="btnUpdate" layoutX="23.0" layoutY="507.0" mnemonicParsing="false" onAction="#updateSubject" prefHeight="39.0" prefWidth="96.0" text="Cập nhật" />
+      <Label layoutX="641.0" layoutY="1.0" prefHeight="27.0" prefWidth="294.0" text="created by Mai Gia Bảo Anh" textFill="RED">
+         <font>
+            <Font name="Courier New Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfsubjectCode" layoutX="18.0" layoutY="125.0" prefHeight="35.0" prefWidth="224.0" />
+      <TextField fx:id="tfsubjectName" layoutX="19.0" layoutY="191.0" prefHeight="35.0" prefWidth="224.0" />
+      <TextField fx:id="tfcreditSubject" layoutX="19.0" layoutY="261.0" prefHeight="35.0" prefWidth="224.0" />
+      <TextField fx:id="tfcreditTuition" layoutX="19.0" layoutY="329.0" prefHeight="35.0" prefWidth="224.0" />
+      <TextField fx:id="tfweight" layoutX="19.0" layoutY="458.0" prefHeight="35.0" prefWidth="224.0" />
+      <Button fx:id="btnAdd" layoutX="127.0" layoutY="508.0" mnemonicParsing="false" onAction="#changeAddSubjectPane" prefHeight="39.0" prefWidth="80.0" text="Thêm " />
+      <Label fx:id="lbIdSubject" layoutX="457.0" layoutY="1.0" visible="false" />
+      <ComboBox fx:id="tfinstitute" layoutX="16.0" layoutY="392.0" prefHeight="39.0" prefWidth="224.0" />
+      <ImageView fx:id="refresh1" fitHeight="36.0" fitWidth="30.0" layoutX="213.0" layoutY="512.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/refresh.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="addSubjectPane" layoutY="1.0" prefHeight="560.0" prefWidth="945.0" style="-fx-background-color: #F2F2F2;">
+         <children>
+            <Label layoutX="52.0" layoutY="24.0" prefHeight="47.0" prefWidth="269.0" text="Thêm học phần" textFill="#c54e2c">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="414.0" layoutY="297.0" text="Hệ số" />
+            <Label layoutX="588.0" layoutY="297.0" text="Khoa" />
+            <Label layoutX="88.0" layoutY="297.0" text="Tín chỉ học phí" />
+            <Label layoutX="242.0" layoutY="297.0" prefHeight="27.0" prefWidth="131.0" text="Tín chỉ học phần" />
+            <Label layoutX="501.0" layoutY="85.0" text="Tên học phần" />
+            <Label layoutX="88.0" layoutY="85.0" text="Mã học phần" />
+            <Label layoutX="582.0" layoutY="1.0" prefHeight="27.0" prefWidth="294.0" text="created by Bùi Việt Quang" textFill="RED">
+               <font>
+                  <Font name="Courier New Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfsubjectCodeAdd" layoutX="88.0" layoutY="120.0" prefHeight="39.0" prefWidth="372.0" />
+            <TextField fx:id="tfsubjectNameAdd" layoutX="501.0" layoutY="120.0" prefHeight="39.0" prefWidth="372.0" />
+            <TextField fx:id="tfcreditSubjectAdd" layoutX="88.0" layoutY="337.0" prefHeight="39.0" prefWidth="131.0" />
+            <TextField fx:id="tfcreditTuitionAdd" layoutX="242.0" layoutY="337.0" prefHeight="39.0" prefWidth="131.0" />
+            <TextField fx:id="tfweightAdd" layoutX="414.0" layoutY="337.0" prefHeight="39.0" prefWidth="131.0" />
+            <Button fx:id="btnAdd1" layoutX="675.0" layoutY="458.0" mnemonicParsing="false" onAction="#addSubject" prefHeight="39.0" prefWidth="162.0" text="Thêm học phần ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Label fx:id="lbIdSubject1" layoutX="457.0" layoutY="1.0" visible="false" />
+            <ComboBox fx:id="cbInstituteAdd" layoutX="580.0" layoutY="337.0" prefHeight="39.0" prefWidth="294.0" />
+            <Label layoutX="88.0" layoutY="184.0" text="Học phần tiên quyết" />
+            <TextField fx:id="tfSuggestion" layoutX="88.0" layoutY="229.0" onKeyPressed="#addRequiredSubject" prefHeight="39.0" prefWidth="372.0" />
+            <Label fx:id="requiredList" layoutX="503.0" layoutY="229.0" prefHeight="39.0" prefWidth="316.0" />
+            <ImageView fx:id="clear" fitHeight="39.0" fitWidth="36.0" layoutX="837.0" layoutY="231.0" onMouseClicked="#clearRequiredList" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cancel" fitHeight="39.0" fitWidth="36.0" layoutX="839.0" layoutY="34.0" onMouseClicked="#changeUpdateSubjectPane" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/basic-cancel-icon_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="refresh" fitHeight="36.0" fitWidth="30.0" layoutX="842.0" layoutY="462.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/refresh.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

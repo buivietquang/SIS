@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="studentFeeView" prefHeight="550.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentInformationSystem.controller.StudentFeeController">
+   <children>
+      <Label layoutX="57.0" layoutY="68.0" prefHeight="36.0" prefWidth="214.0" text="Thông tin học phí của sinh viên:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbstudent" layoutX="283.0" layoutY="68.0" prefHeight="36.0" prefWidth="308.0" style="-fx-background-color: rgb(200, 255, 255);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblregistersubject" layoutX="55.0" layoutY="175.0" prefHeight="200.0" prefWidth="839.0">
+        <columns>
+          <TableColumn fx:id="subjectcode" prefWidth="90.0" text="Mã HP" />
+          <TableColumn fx:id="subjectname" prefWidth="210.0" text="Tên HP" />
+            <TableColumn fx:id="institutename" prefWidth="345.0" text="Khoa" />
+            <TableColumn fx:id="creditsubject" prefWidth="96.0" text="Số TC" />
+            <TableColumn fx:id="credittuition" prefWidth="97.0" text="Số TC Học phí" />
+        </columns>
+      </TableView>
+      <Label layoutX="55.0" layoutY="394.0" prefHeight="36.0" prefWidth="204.0" text="Định mức 1:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="441.0" prefHeight="36.0" prefWidth="204.0" text="Định mức 2:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbtctrong" layoutX="151.0" layoutY="394.0" prefHeight="36.0" prefWidth="87.0" style="-fx-background-color: rgb(200, 255, 255);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbtcngoai" layoutX="151.0" layoutY="441.0" prefHeight="36.0" prefWidth="87.0" style="-fx-background-color: rgb(200, 255, 255);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="441.0" prefHeight="36.0" prefWidth="130.0" text="Số tiền phải nộp:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbsotien" layoutX="721.0" layoutY="441.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: rgb(200, 255, 255);">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="498.0" prefHeight="25.0" prefWidth="185.0" text="Created by Bùi Việt Quang" textFill="#bc2525">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="117.0" prefHeight="36.0" prefWidth="130.0" text="Học kỳ:">
+         <font>
+           <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbhocky" layoutX="122.0" layoutY="117.0" onAction="#getSemester" prefHeight="39.0" prefWidth="130.0" />
+      <Label layoutX="57.0" layoutY="14.0" prefHeight="47.0" prefWidth="277.0" text="Tra cứu học phí" textFill="#c54e2c">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
