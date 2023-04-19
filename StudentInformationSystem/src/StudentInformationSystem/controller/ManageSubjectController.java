@@ -17,7 +17,7 @@ import StudentInformationSystem.entity.Subject;
 
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Constants;
-
+import StudentInformationSystem.validate.ValidateSubject;
 import javafx.animation.TranslateTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

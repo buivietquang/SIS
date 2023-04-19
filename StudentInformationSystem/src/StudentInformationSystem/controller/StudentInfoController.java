@@ -11,7 +11,7 @@ import StudentInformationSystem.entity.UserInfo;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Common;
 import StudentInformationSystem.util.Constants;
-
+import StudentInformationSystem.validate.ValidateUser;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

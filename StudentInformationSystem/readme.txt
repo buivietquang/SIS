@@ -7,7 +7,7 @@ Nhóm 13
 |     |Tên                | Các công việc đã làm                 |
 | --- | ---------------   | ------------------------------------ |
 | 1   | Bùi Việt Quang    | *Thiết kế gói view ; *Thiết kế gói entity ; *Tìm kiếm hình ảnh cho JavaFX ; *Thiết kế gói controller,
-      |                   | *Thiết kế gói properties; *Thiết kế gói util
+      |                   | *Thiết kế gói properties; *Thiết kế gói util; *Thiết kế gói validate
 | 2   | Nguyễn Thành Đạt  | *Thiết kế gói controller, *Viết database, *Sửa lỗi gói controller
 | 3   | Nguyễn Văn Thành  | *Thiết kế gói controller, *file message error, * Viết database
 
@@ -30,5 +30,6 @@ CÁC GÓI CÓ VÀ CHỨC NĂNG( Mô hình MVC )
 	-	Properties: chứa class đọc file .properties, thường lưu message, các cấu hình config, thông tin về DB…
 	
 	
-Ngày 14 -04 -2023: Commit thêm gói properties, gói util, gói controller , sửa lỗi controller
+Ngày 14 - 04 - 2023: Commit thêm gói properties, gói util, gói controller , sửa lỗi controller
+Ngày 19 - 04 - 2023: Commit gói validate 
 

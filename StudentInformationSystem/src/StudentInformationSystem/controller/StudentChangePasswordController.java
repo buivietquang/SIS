@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 import StudentInformationSystem.entity.UserInfo;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Constants;
-
+import StudentInformationSystem.validate.ValidateUser;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

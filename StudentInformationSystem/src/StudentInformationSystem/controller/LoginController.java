@@ -1,10 +1,9 @@
-
 package StudentInformationSystem.controller;
 
 import java.util.regex.Pattern;
 
 import StudentInformationSystem.util.Constants;
-
+import StudentInformationSystem.validate.ValidateUser;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
