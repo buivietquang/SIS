@@ -1,8 +1,8 @@
 Nhóm 13
 
-21010573: Nguyễn Thành Đạt
-21010614: Bùi Việt Quang
-21010634: Nguyễn Văn Thành
+21010573: Nguyễn Thành Đạt - 21010573DatNT
+21010614: Bùi Việt Quang - buivietquang - ngocanhbk
+21010634: Nguyễn Văn Thành - Thanh21010634
 
 |     |Tên                | Các công việc đã làm                 |
 | --- | ---------------   | ------------------------------------ |
