@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 
 import StudentInformationSystem.entity.RegisterSubjectFee;
 import StudentInformationSystem.entity.UserInfo;
-
+import StudentInformationSystem.logic.impl.FeeLogicImpl;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

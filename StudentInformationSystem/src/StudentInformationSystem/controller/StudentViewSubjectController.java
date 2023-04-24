@@ -7,6 +7,10 @@ import java.util.ResourceBundle;
 
 import StudentInformationSystem.entity.Institute;
 import StudentInformationSystem.entity.Subject;
+import StudentInformationSystem.logic.InstituteLogic;
+import StudentInformationSystem.logic.SubjectLogic;
+import StudentInformationSystem.logic.impl.InstituteLogicImpl;
+import StudentInformationSystem.logic.impl.SubjectLogicImpl;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Constants;
 import javafx.collections.FXCollections;

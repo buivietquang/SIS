@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import StudentInformationSystem.entity.UserInfo;
-
+import StudentInformationSystem.logic.impl.UserLogicImpl;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Constants;
 import javafx.animation.KeyFrame;

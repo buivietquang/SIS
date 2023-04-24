@@ -8,6 +8,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import StudentInformationSystem.entity.UserInfo;
+import StudentInformationSystem.logic.UserLogic;
+import StudentInformationSystem.logic.impl.UserLogicImpl;
 import StudentInformationSystem.util.Common;
 import StudentInformationSystem.util.Constants;
 

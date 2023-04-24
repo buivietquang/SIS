@@ -5,6 +5,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import StudentInformationSystem.entity.UserInfo;
+import StudentInformationSystem.logic.UserLogic;
+import StudentInformationSystem.logic.impl.UserLogicImpl;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Constants;
 import StudentInformationSystem.validate.ValidateUser;

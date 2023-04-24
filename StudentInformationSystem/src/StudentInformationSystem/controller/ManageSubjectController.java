@@ -8,13 +8,16 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
-
+import org.controlsfx.control.textfield.TextFields;
 import javafx.scene.input.MouseEvent;
 
 import StudentInformationSystem.entity.Institute;
 import StudentInformationSystem.entity.ManageInfo;
 import StudentInformationSystem.entity.Subject;
-
+import StudentInformationSystem.logic.InstituteLogic;
+import StudentInformationSystem.logic.SubjectLogic;
+import StudentInformationSystem.logic.impl.InstituteLogicImpl;
+import StudentInformationSystem.logic.impl.SubjectLogicImpl;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Constants;
 import StudentInformationSystem.validate.ValidateSubject;

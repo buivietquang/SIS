@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 import StudentInformationSystem.entity.Grade;
 import StudentInformationSystem.entity.GradeTotal;
 import StudentInformationSystem.entity.UserInfo;
-
+import StudentInformationSystem.logic.impl.GradeLogicImpl;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

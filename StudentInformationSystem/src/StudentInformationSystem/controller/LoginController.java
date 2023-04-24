@@ -78,7 +78,7 @@ public class LoginController {
 
 	/**
 	 * 
-	 * Kiểm tra điều kiện đăng nhập </br> Nếu đủ điều kiện thì chuyển sang màn hình Dashboard
+	 * Kiểm tra điều kiện đăng nhập - Nếu đủ điều kiện thì chuyển sang màn hình Dashboard
 	 */
 	@FXML
 	protected void login() {

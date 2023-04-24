@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.util.ResourceBundle;
 
 import StudentInformationSystem.entity.UserInfo;
+import StudentInformationSystem.logic.impl.UserLogicImpl;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Common;
 import StudentInformationSystem.util.Constants;

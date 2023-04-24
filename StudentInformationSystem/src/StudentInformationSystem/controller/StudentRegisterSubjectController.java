@@ -9,6 +9,8 @@ import java.util.ResourceBundle;
 
 import StudentInformationSystem.entity.RegisterSubject;
 import StudentInformationSystem.entity.UserInfo;
+import StudentInformationSystem.logic.RegisterSubjectLogic;
+import StudentInformationSystem.logic.impl.RegisterSubjectLogicImpl;
 import StudentInformationSystem.properties.CustomAlert;
 import StudentInformationSystem.util.Constants;
 import javafx.collections.FXCollections;

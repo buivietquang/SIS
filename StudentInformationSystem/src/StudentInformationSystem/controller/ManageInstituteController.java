@@ -1,8 +1,10 @@
 
 package StudentInformationSystem.controller;
 
+import StudentInformationSystem.dao.impl.InstituteDaoImpl;
 import StudentInformationSystem.entity.Institute;
 import StudentInformationSystem.entity.Subject;
+import StudentInformationSystem.logic.impl.InstituteLogicImpl;
 import StudentInformationSystem.util.Constants;
 
 import java.io.IOException;

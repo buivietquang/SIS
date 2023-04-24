@@ -10,6 +10,7 @@ public class Constants {
 	// database
 	public static final String DRIVER = "com.mysql.jdbc.Driver";
 	public static final String URL = "NULL";
+	public static final String USERNAME = "root";
 	public static final String PASSWORD = "root";
 
 	public static final String MESSAGE_ERROR = "message_error.properties";

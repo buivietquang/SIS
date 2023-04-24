@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import StudentInformationSystem.entity.Notice;
+import StudentInformationSystem.logic.NoticeLogic;
+import StudentInformationSystem.logic.impl.NoticeLogicImpl;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
