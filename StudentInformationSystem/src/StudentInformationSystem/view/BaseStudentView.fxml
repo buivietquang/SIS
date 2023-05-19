@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentInformationSystem.controller.StudentBaseController">
+	<children>
+      <AnchorPane fx:id="menuPane" layoutX="14.0" layoutY="81.0" prefHeight="560.0" prefWidth="303.0">
+         <children>
+            <Button fx:id="btnRegisterSubject" mnemonicParsing="false" onAction="#changeStudentRegisterSubjectPane" prefHeight="74.0" prefWidth="303.0" text="    Đăng ký học phần" />
+            <Button fx:id="btnViewGrade" layoutY="74.0" mnemonicParsing="false" onAction="#changeStudentGradePane" prefHeight="74.0" prefWidth="303.0" text="Kết quả học tập" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Books-300x300.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/pngtree-grade-office-information-icon-png-clipart_1240994.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnUserInfo" layoutY="148.0" mnemonicParsing="false" onAction="#changeStudentInfoPane" prefHeight="74.0" prefWidth="303.0" text="   Thông tin cá nhân" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/user_info.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="19.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../image/Books-300x300.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSearchFee" layoutY="222.0" mnemonicParsing="false" onAction="#changeStudentFeePane" prefHeight="74.0" prefWidth="303.0" text="Tra cứu học phí" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/kisspng-united-states-dollar-money-computer-icons-coin-5adc03183e8138.230101301524368152256.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="noticePane" layoutX="-2.0" layoutY="305.0" prefHeight="256.0" prefWidth="303.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="headerPane" layoutX="13.0" layoutY="3.0" prefHeight="74.0" prefWidth="1286.0">
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="76.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/pka.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbUserName" layoutX="848.0" layoutY="21.0" prefHeight="35.0" prefWidth="288.0" />
+            <Button fx:id="btnLogoutUser" layoutX="1136.0" layoutY="18.0" mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="117.0" text="Đăng xuất" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="stackPane" layoutX="328.0" layoutY="84.0" prefHeight="547.0" prefWidth="956.0" />
+	</children>
+</AnchorPane>

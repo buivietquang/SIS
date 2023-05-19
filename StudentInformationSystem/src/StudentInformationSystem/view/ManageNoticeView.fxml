@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="manageFeeView" prefHeight="550.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentInformationSystem.controller.ManageNoticeController">
+   <children>
+      <TableView fx:id="tblnotice" layoutX="47.0" layoutY="104.0" onMouseClicked="#tableClickedRow" prefHeight="227.0" prefWidth="855.0">
+        <columns>
+          <TableColumn fx:id="title" prefWidth="252.0" text="Tiêu đề" />
+            <TableColumn fx:id="content" prefWidth="378.0" text="Nội dung" />
+            <TableColumn fx:id="datetime" prefWidth="224.0" text="Ngày đăng" />
+            <TableColumn fx:id="idNotice" minWidth="0.0" prefWidth="0.0" text="idNotice" visible="false" />
+        </columns>
+      </TableView>
+      <Button fx:id="btndelete" layoutX="250.0" layoutY="481.0" mnemonicParsing="false" onAction="#deleteNotice" prefHeight="34.0" prefWidth="91.0" text="Xóa">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnadd" layoutX="52.0" layoutY="481.0" mnemonicParsing="false" onAction="#insertNotice" prefHeight="34.0" prefWidth="91.0" text="Thêm">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnedit" layoutX="151.0" layoutY="481.0" mnemonicParsing="false" onAction="#updateNotice" prefHeight="34.0" prefWidth="91.0" text="Sửa">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="tftitle" layoutX="47.0" layoutY="375.0" prefHeight="34.0" prefWidth="375.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="47.0" layoutY="349.0" text="Tiêu đề:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="348.0" prefHeight="23.0" prefWidth="148.0" text="Nội dung thông báo:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="tacontent" layoutX="476.0" layoutY="375.0" prefHeight="144.0" prefWidth="428.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Label layoutX="715.0" layoutY="68.0" prefHeight="23.0" prefWidth="173.0" text="Created by Bùi Việt Quang" textFill="#ab1f1f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnrefresh" layoutX="356.0" layoutY="481.0" mnemonicParsing="false" onAction="#refreshAll" prefHeight="34.0" prefWidth="84.0" text="Refresh">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="lbidnotice" layoutX="632.0" layoutY="29.0" visible="false" />
+      <Label layoutX="47.0" layoutY="33.0" prefHeight="47.0" prefWidth="289.0" text="Cập nhật thông báo" textFill="#c54e2c">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
