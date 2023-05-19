@@ -7,9 +7,9 @@ Nhóm 13
 |     |Tên                | Các công việc đã làm                 |
 | --- | ---------------   | ------------------------------------ |
 | 1   | Bùi Việt Quang    | *Thiết kế gói view ; *Thiết kế gói entity ; *Tìm kiếm hình ảnh cho JavaFX ; *Thiết kế gói controller,
-      |                   | *Thiết kế gói properties; *Thiết kế gói util; *Thiết kế gói validate, * Thiết kế gói logic
-| 2   | Nguyễn Thành Đạt  | *Thiết kế gói controller, *Viết database, *Sửa lỗi gói controller, *Fix lỗi các gói
-| 3   | Nguyễn Văn Thành  | *Thiết kế gói controller, *file message error, * Viết database, *Add comment
+      |                   | *Thiết kế gói properties; *Thiết kế gói util; *Thiết kế gói validate, * Thiết kế gói logic,* Thiết kế gói dao
+| 2   | Nguyễn Thành Đạt  | *Thiết kế gói controller, *Viết database, *Sửa lỗi gói controller, *Fix lỗi các gói, * Viết báo cáo
+| 3   | Nguyễn Văn Thành  | *Thiết kế gói controller, *file message error, * Viết database, *Add comment, * Connect jdbc
 
 
 CÁC GÓI CÓ VÀ CHỨC NĂNG( Mô hình MVC )
@@ -33,3 +33,12 @@ CÁC GÓI CÓ VÀ CHỨC NĂNG( Mô hình MVC )
 Ngày 14 - 04 - 2023: Commit thêm gói properties, gói util, gói controller , sửa lỗi controller
 Ngày 19 - 04 - 2023: Commit gói validate 
 Ngày 20 - 04 - 2023: Hoàn thiện database , gói logic(chưa impl)
+Ngày 23 - 04 - 2023: Hoàn thiện database , gói impl của logic
+Ngày 25 - 04 - 2023: Gói dao(chưa impl)
+Ngày 27 - 04 - 2023: Gói dao thêm impl
+Ngày 01 - 05 - 2023: Fix lỗi dao
+Ngày 05 - 05 - 2023: fix lỗi login của phần mềm 
+Ngày 07 - 05 - 2023: Fix lỗi mã hóa mật khẩu
+Ngày 10 - 05 - 2023: Hoàn thiện các chức năng, viết báo cáo
+
+
