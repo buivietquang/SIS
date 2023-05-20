@@ -41,6 +41,7 @@ Ngày 05 - 05 - 2023: fix lỗi login của phần mềm
 Ngày 07 - 05 - 2023: Fix lỗi mã hóa mật khẩu
 Ngày 10 - 05 - 2023: Hoàn thiện các chức năng, viết báo cáo
 Ngày 15 - 05 - 2023: Fix thông báo 
+Ngày 20 - 05 - 2023: Hoàn thiện báo cáo
 
 
 
